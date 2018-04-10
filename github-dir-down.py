@@ -32,6 +32,9 @@ args = path.split('/',7)
 apiurl = "https://api.github.com/repos/" + args[3] + "/" + args[4] + "/contents/" + args[7]
 os.makedirs(args[7])
 os.chdir(args[7])
+
 print "Below files/directories are cloned"
+print "----------------------------------"
 clone_dir(0,apiurl)
+print "----------------------------------"
 print "Completed"
